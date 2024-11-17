@@ -1,6 +1,12 @@
 Cell_env/
 ConSep/*
-cpm17/*
-MoNuSeg/*
-PanNuke/*
+!ConSep/
 
+cpm17/*
+!cpm17/
+
+MoNuSeg/*
+!MoNuSeg/
+
+PanNuke/*
+!PanNuke/
