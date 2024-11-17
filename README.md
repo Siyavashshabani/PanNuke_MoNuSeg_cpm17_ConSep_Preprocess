@@ -109,7 +109,7 @@ Test
 how to run the preprocess code:
 
 ```bash
-python3 monuseg_process.py
+python3 preprocess_monuseg.py
 ```
 # CPM17
 
@@ -125,10 +125,10 @@ how to run the preprocess code:
 
 ```bash
 # train
-python3 process_cpm17.py --dataset CPM17 --subset train
+python3 preprocess_cpm17.py --dataset CPM17 --subset train
 
 # test
-python3 process_cpm17.py --dataset CPM17 --subset test
+python3 preprocess_cpm17.py --dataset CPM17 --subset test
 
 ```
 
