@@ -39,7 +39,7 @@ how to run the preprocess code:
 python3 pannuke_process.py
 ```
 The following is a sample of the preprocessed output:
-![Sample Output](./pics/output_pannauke.png)
+![Sample Output](./pics/output_pannuke.png)
 
 ### Instructions for Preparation
 1. Download the `.zip` files from the [official PanNuke dataset page](https://jgamper.github.io/PanNukeDataset/).
@@ -50,10 +50,60 @@ You are now ready to preprocess the data using this repository.
 
 
 ### MoNuSeg
-[Add description here about MoNuSeg, including key characteristics and use cases.]
+The dataset for this challenge was obtained by carefully annotating tissue images of several patients with tumors of different organs and who were diagnosed at multiple hospitals. This dataset was created by downloading H&E stained tissue images captured at 40x magnification from TCGA archive. H&E staining is a routine protocol to enhance the contrast of a tissue section and is commonly used for tumor assessment (grading, staging, etc.). Given the diversity of nuclei appearances across multiple organs and patients, and the richness of staining protocols adopted at multiple hospitals, the training datatset will enable the development of robust and generalizable nuclei segmentation techniques that will work right out of the box.
 
+The dataset is divided into two sections: train and test. You can download the dataset [here](https://monuseg.grand-challenge.org/).
+
+After unzip the data directory is:
+```
+📦Train
+ ┣ 📂images
+  ┃ ┣ 📜XXX.tif
+ ┣ 📂masks
+  ┃ ┣ 📜XXX.png
+Test
+ ┣ 📂images
+  ┃ ┣ 📜XXX.tif
+ ┣ 📂masks
+  ┃ ┣ 📜XXX.png
+```
+how to run the preprocess code:
+
+```bash
+python3 monuseg_process.py
+```
 ### CPM17
-[Add description here about CPM17, including its focus and unique features.]
+
+The Third dataset is **CPM17 (Computational Precision Medicine Digital Pathology Challenge)**. It includes 64 H&E-stained histopathology images, each with a size of 500×500 pixels, featuring 7,570 annotated nuclear boundaries. Following the original challenge specifications, the dataset is divided into two sets:
+- **Training Set**: 32 images
+- **Testing Set**: 32 images
+
+You can download the dataset [here](https://drive.google.com/drive/folders/1l55cv3DuY-f7-JotDN7N5nbNnjbLWchK).
+
+---
+
+how to run the preprocess code:
+
+```bash
+# train
+python3 process_cpm17.py --dataset CPM17 --subset train
+
+# test
+python3 process_cpm17.py --dataset CPM17 --subset test
+
+```
 
 ### ConSep
-[Add description here about ConSep, highlighting its structure and relevance for nuclei segmentation.]
+
+ConSep is the fourth dataset, containing manually annotated 24,319 nuclei with associated class labels. This dataset is widely used for nuclei segmentation and classification tasks.
+
+You can download the dataset from [here](https://warwick.ac.uk/fac/sci/dcs/research/tia/data/hovernet/).
+
+
+how to run the preprocess code:
+
+```bash
+python3 preprocess_consep.py
+```
+
+
