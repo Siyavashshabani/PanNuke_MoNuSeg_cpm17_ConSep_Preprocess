@@ -138,7 +138,6 @@ ConSep is the fourth dataset, containing manually annotated 24,319 nuclei with a
 
 You can download the dataset from [here](https://warwick.ac.uk/fac/sci/dcs/research/tia/data/hovernet/).
 
-
 how to run the preprocess code:
 
 ```bash
