@@ -87,3 +87,5 @@ if __name__ == "__main__":
 
         save_images_and_masks(images, masks, types, images_dir, masks_dir, tissues_dir, Neoplastic_dir, inflams_dir, Connective_dir, Dead_dir, Epithelial_dir, fold)
         print(f"Fold {fold} processing completed.")
+
+
