@@ -132,7 +132,7 @@ python3 process_cpm17.py --dataset CPM17 --subset test
 
 ```
 
-### ConSep
+# ConSep
 
 ConSep is the fourth dataset, containing manually annotated 24,319 nuclei with associated class labels. This dataset is widely used for nuclei segmentation and classification tasks.
 
