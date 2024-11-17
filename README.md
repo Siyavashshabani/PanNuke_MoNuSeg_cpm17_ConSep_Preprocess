@@ -2,6 +2,45 @@
 
 A repository for preprocessing widely used H&E image datasets, including PanNuke, MoNuSeg, CPM17, and ConSep, to facilitate nuclei segmentation tasks with deep learning models.
 
+The main directory structure will be as follows:
+
+```
+📂PanNuke
+   📂raw_data
+    📂Fold 1
+      📂images
+        📂fold1
+           📜images.npy
+           📜types.npy
+      📂masks
+        📂fold1
+          📜masks.npy
+        📜by-nc-sa.md
+        📜README.md
+      📜README.md
+📂MoNuSeg
+    📂train
+        📂images
+        📂masks
+    📂test
+        📂images
+        📂masks
+📂CPM17
+    📂train
+        📂images
+        📂labels
+    📂test
+        📂images
+        📂labels
+📂ConSep
+    📂train
+        📂images
+        📂labels
+    📂test
+        📂images
+        📂labels
+```
+
 ## Datasets
 
 ### PanNuke
